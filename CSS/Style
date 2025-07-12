@@ -1,0 +1,66 @@
+/* Hero section custom styles */
+.hero-section {
+  height: 70vh;
+  background: url('https://source.unsplash.com/1600x900/?food') center/cover no-repeat;
+  background-color: blue;
+}
+
+.hero-section h1,
+.hero-section p {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive font sizes for Hero */
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Card hover effect */
+.hover-effect:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+
+.badge.bg-success {
+  background-color: #28a745 !important;
+}
+
+.badge.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+/* Fade-in animation for tab content */
+.tab-pane {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease-in-out;
+}
+
+.tab-pane.show.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth card entrance animation */
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 0.6s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
